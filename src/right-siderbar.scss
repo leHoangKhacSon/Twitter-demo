@@ -1,0 +1,61 @@
+.right-siderbar {
+  font-family: $font;
+  width: 442px;
+  &-content {
+    margin-left: 30px;
+    margin-right: 55px;
+    &-header {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      @import './search-form.scss';
+    };
+    &-trend {
+      border-radius: $border-image;
+      background-color: rgba(170, 184, 194, 0.2);
+      margin-bottom: 10px;
+      @import './trend.scss';
+    };
+    &-follow {
+      border-radius: $border-image;
+      background-color: rgba(170, 184, 194, 0.2);
+      margin-bottom: 25px;
+      @import './follow.scss';
+    }
+    &-footer {
+      font-size: 14px;
+      padding-left: 15px;
+      .line-1 {
+        margin-bottom: 10px;
+        &-item {
+          &-text {
+            color: #555;
+            margin-right: 10px;
+            text-decoration: none;
+          };
+          &-text:hover {
+            text-decoration: underline;
+          }
+        };
+      };
+      .line-2 {
+        margin-bottom: 10px;
+        &-item {
+          &-text {
+            color: #555;
+            margin-right: 10px;
+            text-decoration: none;
+          };
+          &-text:hover {
+            text-decoration: underline;
+          };
+          &-icon {
+            
+          };
+        };
+      };
+      .inc {
+        color: #555;
+      };
+    };
+  };
+}

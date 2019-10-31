@@ -1,0 +1,102 @@
+.timeline {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  &-item {
+    display: flex;
+    border-bottom: 1px solid #888;
+    padding-top: 20px;
+    &-avatar {
+      width: 49px;
+      margin: 0 5px;
+      .avatar-img {
+        margin: auto;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-image: url($url);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        &-hover {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          position: absolute;
+          transition: all .3s;
+        };
+      };
+      .avatar-img:hover .avatar-img-hover {
+        background-color: $bg-hover;
+        cursor: pointer;
+      }
+    };
+    &-content {
+      flex-grow: 1;
+      &-header {
+        display: flex;
+        margin-bottom: 5px;
+        .post-author {
+          text-decoration: none;
+          &-name {
+            font-weight: 600;
+            color: #000;
+          };
+          &-tick {
+
+          };
+          &-trend {
+            color: #888;
+          };  
+        };
+        .post-time {
+          color: #888;
+          text-decoration: none;
+          margin-left: 15px;
+          flex-grow: 1;
+        };  
+        .dropdown-btn {
+
+        };
+      };
+      &-main {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        .description {
+          width: 490px;
+          margin-bottom: 5px;
+        };
+        .sub-description {
+          height: 285px;
+          width: 100%;
+          background-image: url($url);
+          background-size: cover;
+          background-position: center;
+          border-radius: $border-image;
+        };
+      };
+      &-footer {
+        display: flex;
+        margin-right: 60px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        .social {
+          &-icon {
+            position: relative;
+            &-hover {
+              @include box-social;
+            };
+          };
+          &-view {
+            margin-left: 5px;
+          };
+        };
+        .social:hover .social-icon-hover {
+          background-color: $bg-hover;
+        };
+      };
+    };
+  };
+  &-item:hover {
+    background-color: rgb(245, 248, 250);
+  };
+};
