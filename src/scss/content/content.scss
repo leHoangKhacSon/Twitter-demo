@@ -23,14 +23,7 @@
       position: relative;
       &-hover {
         color: $primary-color;
-        width: 37px;
-        height: 37px;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: all .3s;
+        @include box-overlay(37px, 37px);
       };
       &-hover:hover {
         background-color: $bg-hover;

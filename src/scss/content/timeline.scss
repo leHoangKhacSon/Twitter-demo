@@ -1,28 +1,19 @@
 .timeline {
   margin-bottom: 20px;
-  padding: 0 15px;
   &-item {
     display: flex;
-    border-bottom: 1px solid #888;
-    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 15px 0 15px;
+    transition: all .3s;
     &-avatar {
       width: 49px;
       margin: 0 5px;
       .avatar-img {
         margin: auto;
-        width: 47px;
-        height: 47px;
-        border-radius: 50%;
-        background-image: url($url);
-        background-size: cover;
-        background-position: center;
         position: relative;
+        @include avatar(47px, 47px, $url);
         &-hover {
-          height: 100%;
-          width: 100%;
-          border-radius: 50%;
-          position: absolute;
-          transition: all .3s;
+          @include box-overlay(47px, 47px);
         };
       };
       .avatar-img:hover .avatar-img-hover {
@@ -54,10 +45,56 @@
           margin-left: 15px;
           flex-grow: 1;
         };  
-        .dropdown-btn {
-
+        .dropdown-btn { 
+          height: 27px;
+          width: 27px;
+          border-radius: 50%;  
+          text-align: center;    
+          position: relative;  
+          &-icon {
+            font-size: 15px;
+            width: 15px;
+            position: relative;
+            transition: all .3s;
+            &-overlay {
+              @include box-overlay(27px, 27px);
+            };
+          };
+          .option {
+            list-style: none;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 170px;
+            border-radius: 5px;
+            background-color: #fff;
+            opacity: 0;
+            &-item {
+              padding: 15px;
+              display: flex;
+              align-items: center;
+              transition: all .3s;
+              &-icon {
+                margin-right: 10px;
+              };
+            };
+            &-item:hover {
+              background-color: $bg-hover;
+              cursor: pointer;
+            };
+          }
         };
       };
+      .dropdown-btn:hover .dropdown-btn-icon {
+        color: $primary-color;
+        cursor: pointer;
+      };
+      .dropdown-btn:hover .dropdown-btn-icon-overlay {
+        background-color: $bg-hover;
+      };
+      .dropdown-btn:active .option{
+        
+      }
       &-main {
         padding-bottom: 10px;
         margin-bottom: 10px;
@@ -77,13 +114,13 @@
       &-footer {
         display: flex;
         margin-right: 60px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         justify-content: space-between;
         .social {
           &-icon {
             position: relative;
             &-hover {
-              @include box-social;
+              @include box-overlay(35px, 35px);
             };
           };
           &-view {
@@ -92,6 +129,7 @@
         };
         .social:hover .social-icon-hover {
           background-color: $bg-hover;
+          cursor: pointer;
         };
       };
     };

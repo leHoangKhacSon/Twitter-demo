@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Twitter</title>
-  <link rel="stylesheet" href="./main.scss">
+  <link rel="stylesheet" href="./scss/main.scss">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
@@ -97,9 +97,9 @@
         </p>
         <i class="home-bar-icon fab fa-jedi-order">
           <div class="home-bar-icon-hover">
-            
+
           </div>
-        </i>      
+        </i>
       </div>
       <div class="post">
         <div class="post-avatar">
@@ -109,7 +109,7 @@
         </div>
         <div class="post-form">
           <div class="post-form-main">
-            <p contenteditable>Chuyện gì đang xảy ra?</p>
+            <textarea rows='1' placeholder="What's going on?"></textarea>
           </div>
           <div class="post-form-footer">
             <div class="add">
@@ -159,7 +159,37 @@
                 9: 00 AM
               </a>
               <div class="dropdown-btn">
-                <i class="fas fa-caret-down"></i>
+                <i class="dropdown-btn-icon fas fa-caret-down">
+                  <div class="dropdown-btn-icon-overlay"></div>
+                </i>
+                <ul class="option">
+                  <li class="option-item">
+                    <i class="option-item-icon far fa-frown"></i>
+                    <span class="option-item-text">
+                      Show less often
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-code"></i> <span class="option-item-text">
+                      Ember Tweet
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-user-plus"></i>
+                    <span class="option-item-text">
+                      Follow @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-microphone-alt-slash"></i> Mute @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-ban"></i> <span class="option-item-text">
+                      Block @name
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="timeline-item-content-main">
@@ -218,7 +248,37 @@
                 9: 00 AM
               </a>
               <div class="dropdown-btn">
-                <i class="fas fa-caret-down"></i>
+                <i class="dropdown-btn-icon fas fa-caret-down">
+                  <div class="dropdown-btn-icon-overlay"></div>
+                </i>
+                <ul class="option">
+                  <li class="option-item">
+                    <i class="option-item-icon far fa-frown"></i>
+                    <span class="option-item-text">
+                      Show less often
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-code"></i> <span class="option-item-text">
+                      Ember Tweet
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-user-plus"></i>
+                    <span class="option-item-text">
+                      Follow @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-microphone-alt-slash"></i> Mute @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-ban"></i> <span class="option-item-text">
+                      Block @name
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="timeline-item-content-main">
@@ -277,7 +337,37 @@
                 9: 00 AM
               </a>
               <div class="dropdown-btn">
-                <i class="fas fa-caret-down"></i>
+                <i class="dropdown-btn-icon fas fa-caret-down">
+                  <div class="dropdown-btn-icon-overlay"></div>
+                </i>
+                <ul class="option">
+                  <li class="option-item">
+                    <i class="option-item-icon far fa-frown"></i>
+                    <span class="option-item-text">
+                      Show less often
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-code"></i> <span class="option-item-text">
+                      Ember Tweet
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-user-plus"></i>
+                    <span class="option-item-text">
+                      Follow @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-microphone-alt-slash"></i> Mute @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-ban"></i> <span class="option-item-text">
+                      Block @name
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="timeline-item-content-main">
@@ -336,7 +426,37 @@
                 9: 00 AM
               </a>
               <div class="dropdown-btn">
-                <i class="fas fa-caret-down"></i>
+                <i class="dropdown-btn-icon fas fa-caret-down">
+                  <div class="dropdown-btn-icon-overlay"></div>
+                </i>
+                <ul class="option">
+                  <li class="option-item">
+                    <i class="option-item-icon far fa-frown"></i>
+                    <span class="option-item-text">
+                      Show less often
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-code"></i> <span class="option-item-text">
+                      Ember Tweet
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-user-plus"></i>
+                    <span class="option-item-text">
+                      Follow @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-microphone-alt-slash"></i> Mute @name
+                    </span>
+                  </li>
+                  <li class="option-item">
+                    <i class="option-item-icon fas fa-ban"></i> <span class="option-item-text">
+                      Block @name
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="timeline-item-content-main">
@@ -579,6 +699,11 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    const ta = document.querySelector('textarea');
+    autosize(ta);
+    
+</script>
 </body>
 
 </html>
