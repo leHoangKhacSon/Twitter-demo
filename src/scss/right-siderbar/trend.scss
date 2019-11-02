@@ -23,20 +23,22 @@
 }
 
 .trend-item {
+  font-size: 15px;
   padding: 10px 15px;
   border-bottom: 1px solid #ddd;
   transition: all .3s;
   &-text {
-    color: #555;
+    color: rgb(101, 119, 134);
     font-size: 15px;
     margin-bottom: 5px;
   };
   &-hashtag {
+    color: rgb(20, 23, 26);
     font-weight: 600;
     margin-bottom: 5px;
   };
   &-view {
-    color: #555;
+    color: rgb(101, 119, 134);
   };
 }
 

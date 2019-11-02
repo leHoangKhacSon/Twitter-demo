@@ -1,0 +1,36 @@
+&-footer {
+  display: flex;
+  margin-right: 60px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  .social {
+    color: rgb(101, 119, 134);
+    &-icon {
+      position: relative;
+      transition: all .3s;
+      &-hover {
+        @include box-overlay(35px, 35px);
+      };
+    };
+    &-view {
+      margin-left: 5px;
+    };
+  };
+  .social:hover .social-icon-hover {
+    background-color: $bg-hover;
+    cursor: pointer;
+  };
+  .social:nth-child(1):hover,
+  .social:nth-child(4):hover {
+    color: $primary-color;
+    cursor: pointer;
+  };
+  .social:nth-child(2):hover {
+    color: rgb(23, 191, 99);
+    cursor: pointer;
+  };
+  .social:nth-child(3):hover {
+    color: rgb(224, 36, 94);
+    cursor: pointer;
+  }
+};

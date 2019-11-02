@@ -15,6 +15,7 @@
         &-hover {
           @include box-overlay(47px, 47px);
         };
+        @import '../helpers/post-author-info.scss';
       };
       .avatar-img:hover .avatar-img-hover {
         background-color: $bg-hover;
@@ -23,115 +24,9 @@
     };
     &-content {
       flex-grow: 1;
-      &-header {
-        display: flex;
-        margin-bottom: 5px;
-        .post-author {
-          text-decoration: none;
-          &-name {
-            font-weight: 600;
-            color: #000;
-          };
-          &-tick {
-
-          };
-          &-trend {
-            color: #888;
-          };  
-        };
-        .post-time {
-          color: #888;
-          text-decoration: none;
-          margin-left: 15px;
-          flex-grow: 1;
-        };  
-        .dropdown-btn { 
-          height: 27px;
-          width: 27px;
-          border-radius: 50%;  
-          text-align: center;    
-          position: relative;  
-          &-icon {
-            font-size: 15px;
-            width: 15px;
-            position: relative;
-            transition: all .3s;
-            &-overlay {
-              @include box-overlay(27px, 27px);
-            };
-          };
-          .option {
-            list-style: none;
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 170px;
-            border-radius: 5px;
-            background-color: #fff;
-            opacity: 0;
-            &-item {
-              padding: 15px;
-              display: flex;
-              align-items: center;
-              transition: all .3s;
-              &-icon {
-                margin-right: 10px;
-              };
-            };
-            &-item:hover {
-              background-color: $bg-hover;
-              cursor: pointer;
-            };
-          }
-        };
-      };
-      .dropdown-btn:hover .dropdown-btn-icon {
-        color: $primary-color;
-        cursor: pointer;
-      };
-      .dropdown-btn:hover .dropdown-btn-icon-overlay {
-        background-color: $bg-hover;
-      };
-      .dropdown-btn:active .option{
-        
-      }
-      &-main {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-        .description {
-          width: 490px;
-          margin-bottom: 5px;
-        };
-        .sub-description {
-          height: 285px;
-          width: 100%;
-          background-image: url($url);
-          background-size: cover;
-          background-position: center;
-          border-radius: $border-image;
-        };
-      };
-      &-footer {
-        display: flex;
-        margin-right: 60px;
-        margin-bottom: 15px;
-        justify-content: space-between;
-        .social {
-          &-icon {
-            position: relative;
-            &-hover {
-              @include box-overlay(35px, 35px);
-            };
-          };
-          &-view {
-            margin-left: 5px;
-          };
-        };
-        .social:hover .social-icon-hover {
-          background-color: $bg-hover;
-          cursor: pointer;
-        };
-      };
+      @import './timeline-item-content/content-header.scss';
+      @import './timeline-item-content/content-main.scss';
+      @import './timeline-item-content/content-footer.scss';
     };
   };
   &-item:hover {

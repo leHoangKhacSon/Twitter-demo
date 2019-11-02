@@ -1,0 +1,75 @@
+&-header {
+  display: flex;
+  .post-author {
+    text-decoration: none;
+    position: relative;
+    transition: all .3s;
+    &-name {
+      font-weight: bold;
+      font-size: 15px;
+      color: rgb(20, 23, 26);
+    };
+    &-name:hover {
+      text-decoration: underline;
+    };
+    &-trend {
+      color: rgb(101, 119, 134);
+    };  
+    @import '../../helpers/post-author-info.scss';
+  };
+  .post-author:hover .post-author-info {
+    display: block;
+  }
+  .post-time {
+    color: rgb(101, 119, 134);
+    text-decoration: none;
+    margin-left: 15px;
+    flex-grow: 1;
+  };  
+  .dropdown-btn { 
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;  
+    text-align: center;    
+    position: relative;  
+    &-icon {
+      font-size: 15px;
+      width: 15px;
+      position: relative;
+      transition: all .3s;
+      &-overlay {
+        @include box-overlay(27px, 27px);
+      };
+    };
+    .option {
+      list-style: none;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 170px;
+      border-radius: 5px;
+      background-color: #fff;
+      opacity: 0;
+      &-item {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        transition: all .3s;
+        &-icon {
+          margin-right: 10px;
+        };
+      };
+      &-item:hover {
+        background-color: $bg-hover;
+        cursor: pointer;
+      };
+    }
+  };
+};
+.dropdown-btn:hover .dropdown-btn-icon {
+  color: $primary-color;
+  cursor: pointer;
+};
+.dropdown-btn:hover .dropdown-btn-icon-overlay {
+  background-color: $bg-hover;
+};

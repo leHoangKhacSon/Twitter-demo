@@ -1,6 +1,6 @@
 # Twitter 
-Project demo [Twitter-demo]()
-This project redesign a twitter homepage [Twitter] (https://twitter.com) using html and css.
+Project demo [Twitter-demo](https://twitter-92c49.web.app/)
+This project redesign a twitter homepage [Twitter](https://twitter.com) using html and scss.
 
 ## Installation 
 Using npm:

@@ -1,0 +1,19 @@
+@mixin box-overlay ($width, $height) {
+	border-radius: 50%;
+	width: $width;
+	height: $height;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+}
+
+@mixin avatar($width, $height, $url) {
+	width: $width;
+	height: $height;
+	border-radius: 50%;
+	background-image: url($url);
+	background-size: cover;
+	background-position: center;
+}
