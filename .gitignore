@@ -5,3 +5,4 @@ dist
 build
 .firebaserc
 firebase.json
+public

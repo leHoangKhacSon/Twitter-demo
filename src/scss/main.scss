@@ -49,11 +49,15 @@ table {
 
 @import './helpers/varaible.scss';
 @import './helpers/mixin.scss';
+@import './responsive.scss';
 
 .wrapper {
 	display: flex;
 	@import './left-siderbar/left-siderbar.scss';
 	@import './content/content.scss';
 	@import './right-siderbar/right-siderbar.scss';
+	@import './helpers/post-show.scss';
 }
+
+
 

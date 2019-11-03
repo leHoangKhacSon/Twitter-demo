@@ -11,6 +11,7 @@
       .avatar-img {
         margin: auto;
         position: relative;
+        transition: all .3s;
         @include avatar(47px, 47px, $url);
         &-hover {
           @include box-overlay(47px, 47px);
@@ -20,6 +21,11 @@
       .avatar-img:hover .avatar-img-hover {
         background-color: $bg-hover;
         cursor: pointer;
+      };
+      .avatar-img:hover .post-author-info {
+        display: block;
+        top: 50px;
+        left: -50px;
       }
     };
     &-content {

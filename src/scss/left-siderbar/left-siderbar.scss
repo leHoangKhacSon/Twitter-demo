@@ -1,5 +1,5 @@
 .left-siderbar {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-family: $font;
   width: 23.5%;
   &-content {
     padding: 0 20px;
@@ -22,16 +22,19 @@
     .menu {
       display: flex;
       flex-direction: column;
+      margin-top: 2px;
+      margin-bottom: 5px;
       &-item {
         text-decoration: none;
-        color: #000;
+        color: rgb(20, 23, 26);
         font-weight: 600;
         font-size: 19px;
         padding: 4px 0;
         &-content {
+          height: 26px;
           padding: 10px;
           display: inline-block;
-          border-radius: 20px;
+          border-radius: 22px;
           transition: all .3s;
           .menu-item-title {
             margin: 0 15px 0 20px;
@@ -49,9 +52,9 @@
       };
     };
     .btn {
-      padding: 16px 18px;
+      padding: 16px 21px;
       text-align: center;
-      margin: 5px 40px 5px 0;
+      margin: 5px 30px 5px 0;
       border-radius: 30px;
       background-color: $primary-color;
       transition: all .3s;

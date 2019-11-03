@@ -26,12 +26,31 @@
     margin-left: 15px;
     flex-grow: 1;
   };  
+  .option-handler {
+    .option {
+      display: block !important;
+    };
+  }
   .dropdown-btn { 
     height: 27px;
     width: 27px;
     border-radius: 50%;  
     text-align: center;    
-    position: relative;  
+    position: relative;
+    button {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      border: none;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    } 
+    button:focus +.option {
+      display: block !important;
+    }
     &-icon {
       font-size: 15px;
       width: 15px;
@@ -45,11 +64,12 @@
       list-style: none;
       position: absolute;
       top: -10px;
-      right: -10px;
+      right: 0px; 
       width: 170px;
+      box-shadow: 1px 1px  2px 1px #ddd;
       border-radius: 5px;
       background-color: #fff;
-      opacity: 0;
+      display: none;
       &-item {
         padding: 15px;
         display: flex;
@@ -72,4 +92,5 @@
 };
 .dropdown-btn:hover .dropdown-btn-icon-overlay {
   background-color: $bg-hover;
+  cursor: pointer;
 };

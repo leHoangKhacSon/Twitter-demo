@@ -1,0 +1,79 @@
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) 
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) 
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1002px) {
+ .right-siderbar {
+   display: none;
+ }
+//  .content {
+//   .timeline {
+//     &-item {
+//       &-header {
+//         width: 60% !important;
+//       }
+//       &-main {
+//         width: 60% !important;
+//         .description {
+//           width: 60% !important;
+//         };
+//         .sub-description {
+//           width: 60% !important;
+//         };
+//       };
+//     };
+//   };
+//  }
+  .left-siderbar {
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .right-siderbar {
+    width: 35% !important;
+  };
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1280px) {
+  .left-siderbar {
+    width: 10% !important;
+    display: flex;
+    justify-content: flex-end;
+    &-content {
+      margin-left: 10 !important;
+      margin-right: 10px !important;
+      padding: 0 !important;
+      width: 49px !important;
+      .logo {
+      }
+      .menu {
+        &-item {
+          &-title {
+            display: none;
+          };  
+        };
+      };
+      .btn {
+        width: 13px;
+        height: 16px;
+        border-radius: 50%;
+        a {
+          display: none;
+        }
+      };
+    }
+  }
+  .right-siderbar {
+    &-content {
+      margin-right: 10px !important;
+    };
+  };
+}
