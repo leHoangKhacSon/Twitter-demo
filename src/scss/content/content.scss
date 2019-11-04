@@ -1,8 +1,10 @@
 .content {
-  width: 44%;
+  // width: 44%;
+  min-width: 594px;
+  max-width: 594px;
   font-size: 15px;
   font-family: $font;
-  flex-grow: 1;
+  // flex-grow: 1;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
   position: relative;
@@ -11,10 +13,9 @@
     position: fixed;
     height: 54px;
     border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
     padding: 0 15px;
     display: flex;
-    width: 44%;
+    width: 594px;
     align-items: center;
     background-color: #fff;
     z-index: 1;

@@ -2,12 +2,11 @@
   display: block !important;
   z-index: 5 !important;
 }
-
 .post-show {
-  width: 45%;
+  width: 600px;
   height: 300px;
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
