@@ -46,18 +46,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.wrapper {
+	display: flex;
+}
 
 @import './helpers/varaible.scss';
 @import './helpers/mixin.scss';
 @import './responsive.scss';
 
-.wrapper {
-	display: flex;
-	@import './left-siderbar/left-siderbar.scss';
-	@import './content/content.scss';
-	@import './right-siderbar/right-siderbar.scss';
-	@import './helpers/post-show.scss';
-}
+@import './left-siderbar/left-siderbar.scss';
+@import './content/content.scss';
+@import './right-siderbar/right-siderbar.scss';
+@import './helpers/post-show.scss';
 
+.block {
+	height: 100vh;
+	overflow: hidden;
+}
 
 

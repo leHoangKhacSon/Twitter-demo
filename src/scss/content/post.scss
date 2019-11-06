@@ -1,6 +1,5 @@
 .post {
   font-family: $font;
-  margin-top: 60px;
   padding: 10px 15px;
   display: flex;
   border-bottom: 10px solid rgb(230, 236, 240);
@@ -15,8 +14,8 @@
       background-image: url($url);
       background-size: cover;
       background-position: center;
-    };
-  };
+    }
+  }
   &-form {
     width: 100%;
     &-main {
@@ -29,7 +28,7 @@
         outline: none;
         border: none;
       }
-    };
+    }
     &-footer {
       display: flex;
       align-items: center;
@@ -42,21 +41,21 @@
           position: relative;
           &-hover {
             @include box-overlay(37px, 37px);
-          };
-        };
+          }
+        }
         &-icon:hover .add-icon-hover {
           background-color: $bg-hover;
           cursor: pointer;
         }
-      };
+      }
       .add-action {
         display: flex;
         align-items: center;
-        opacity: .5;
+        opacity: 0.5;
         &-load {
           font-size: 20px;
           margin-right: 10px;
-        };
+        }
         &-vertical-line {
           color: #000;
         }
@@ -64,7 +63,7 @@
           font-size: 28px;
           color: $primary-color;
           margin-left: 10px;
-        };
+        }
         &-tweet {
           background-color: $primary-color;
           margin-left: 10px;
@@ -76,7 +75,7 @@
             font-weight: 600;
           }
         }
-      };
-    };
-  };
-};
+      }
+    }
+  }
+}

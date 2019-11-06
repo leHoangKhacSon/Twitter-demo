@@ -2,60 +2,12 @@
   font-family: $font;
   width: 32.5%;
   &-content {
-    margin-left: 30px;
-    margin-right: 55px;
-    &-header {
-      margin-top: 10px;
-      margin-bottom: 15px;
-      @import './search-form.scss';
-    };
-    &-trend {
-      border-radius: $border-image;
-      background-color: rgb(245, 248, 250);
-      margin-bottom: 10px;
-      @import './trend.scss';
-    };
-    &-follow {
-      border-radius: $border-image;
-      background-color: rgb(245, 248, 250);
-      margin-bottom: 25px;
-      @import './follow.scss';
-    }
-    &-footer {
-      font-size: 13px;
-      padding-left: 15px;
-      .line-1 {
-        margin-bottom: 10px;
-        &-item {
-          &-text {
-            color: rgb(101, 119, 134);
-            margin-right: 10px;
-            text-decoration: none;
-          };
-          &-text:hover {
-            text-decoration: underline;
-          }
-        };
-      };
-      .line-2 {
-        margin-bottom: 10px;
-        &-item {
-          &-text {
-            color: rgb(101, 119, 134);
-            margin-right: 10px;
-            text-decoration: none;
-          };
-          &-text:hover {
-            text-decoration: underline;
-          };
-          &-icon {
-            
-          };
-        };
-      };
-      .inc {
-        color: rgb(101, 119, 134);
-      };
-    };
+    // margin-left: 30px;
+    // margin-right: 55px;
   };
 }
+
+@import './search.scss';
+@import './trend.scss';
+@import './follow.scss';
+@import './line.scss';

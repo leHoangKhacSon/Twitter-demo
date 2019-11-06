@@ -1,0 +1,18 @@
+.btn {
+  padding: 16px 21px;
+  text-align: center;
+  margin: 5px 30px 5px 0;
+  border-radius: 30px;
+  background-color: $primary-color;
+  transition: all .3s;
+  a {
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+  };
+};
+.btn:hover {
+  background-color: rgb(26, 145, 218);
+  cursor: pointer;
+}

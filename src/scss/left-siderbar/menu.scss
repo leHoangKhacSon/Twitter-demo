@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  &-item {
+    text-decoration: none;
+    color: rgb(20, 23, 26);
+    font-weight: 600;
+    font-size: 19px;
+    padding: 4px 0;
+    &-content {
+      height: 26px;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 22px;
+      transition: all .3s;
+      .menu-item-title {
+        margin: 0 15px 0 20px;
+        line-height: 1.3125;
+      };
+    };
+  };
+  &-item:nth-child(1) {
+    color: $primary-color;
+  }
+  &-item:hover .menu-item-content {
+    color: $primary-color;
+    background-color: $bg-hover;
+    cursor: pointer;
+  };
+};

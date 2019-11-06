@@ -1,0 +1,15 @@
+.logo {
+  width: 49px;
+  height: 49px;
+  margin: 2px 0 2px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  a {
+    color: $primary-color;
+  };
+};
+.logo:hover {
+  background-color: $bg-hover;
+}

@@ -1,60 +1,65 @@
-.trend-header {
-  padding: 15px 15px;
-  margin-bottom: 1px;
-  display: flex;
-  border-bottom: 1px solid #ddd;
-  &-title {
-    font-size: 19px;
-    font-weight: 600;
-    flex-grow: 1;
-  };
-  &-setting {
-    color: $primary-color;
-    position: relative;
-    height: 16px;
-    &-hover {
-      @include box-overlay(37px, 37px)
+.trend {
+  border-radius: $border-image;
+  background-color: rgb(245, 248, 250);
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 55px;
+  &-header {
+    padding: 15px 15px;
+    margin-bottom: 1px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    &-title {
+      font-size: 19px;
+      font-weight: 600;
+      flex-grow: 1;
     };
-    &-hover:hover {
-      background-color: $bg-hover;
-      cursor: pointer;
-    }
-  };
-}
-
-.trend-item {
-  font-size: 15px;
-  padding: 10px 15px;
-  border-bottom: 1px solid #ddd;
-  transition: all .3s;
-  &-text {
-    color: rgb(101, 119, 134);
-    font-size: 15px;
-    margin-bottom: 5px;
-  };
-  &-hashtag {
-    color: rgb(20, 23, 26);
-    font-weight: 600;
-    margin-bottom: 5px;
-  };
-  &-view {
-    color: rgb(101, 119, 134);
-  };
-}
-
-.trend-item:hover,
-.trend-more:hover {
-  background-color: $trend-hover;
-  cursor: pointer;
-}
-
-.trend-more {
-  padding: 15px;
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-  transition: all .3s;
-  &-text {
-    color: $primary-color;
-    text-decoration: none;
+    &-setting {
+      color: $primary-color;
+      position: relative;
+      height: 16px;
+      &-hover {
+        @include box-overlay(37px, 37px)
+      };
+      &-hover:hover {
+        background-color: $bg-hover;
+        cursor: pointer;
+      }
+    };
   }
-}
+  &-item {
+    font-size: 15px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    transition: all .3s;
+    &-text {
+      color: rgb(101, 119, 134);
+      font-size: 15px;
+      margin-bottom: 5px;
+    };
+    &-hashtag {
+      color: rgb(20, 23, 26);
+      font-weight: 600;
+      margin-bottom: 5px;
+    };
+    &-view {
+      color: rgb(101, 119, 134);
+    };
+  }
+  &-item:hover,
+  &-more:hover {
+    background-color: $trend-hover;
+    cursor: pointer;
+  }
+  &-more {
+    padding: 15px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    transition: all .3s;
+    &-text {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+};
+

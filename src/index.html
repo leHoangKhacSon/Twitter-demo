@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
-<body>
+<body id="body">
   <div class="wrapper">
     <div class="left-siderbar">
       <div class="left-siderbar-content">
@@ -83,12 +83,13 @@
             </div>
           </a>
         </div>
-        <div class="btn" onclick="tweetClick()">
+        <div id="btn" class="btn">
           <a href="#">
             Tweet
           </a>
         </div>
       </div>
+      <div></div>
     </div>
     <div class="content">
       <div class="home-bar">
@@ -886,14 +887,13 @@
     </div>
     <div class="right-siderbar">
       <div class="right-siderbar-content">
-        <div class="right-siderbar-content-header">
+        <div class="search">
           <div class="search-form">
             <input 
               type="text" 
+              id="search-form-input"
               class="search-form-input" 
               placeholder="Tìm kiếm Twitter" 
-              onfocus="handlerFocus()"
-              onblur="handlerBlur()"
             >
               <div id="support-toggle" class="search-form-input-support">
                 <p class="text-support">
@@ -904,7 +904,7 @@
             <i class="search-form-icon fas fa-search"></i>
           </div>
         </div>
-        <div class="right-siderbar-content-trend">
+        <div class="trend">
           <div class="trend-header">
             <p class="trend-header-title">
               Xu hướng cho bạn
@@ -969,7 +969,7 @@
             </a>
           </div>
         </div>
-        <div class="right-siderbar-content-follow">
+        <div class="follow">
           <div class="follow-header">
             <p class="follow-header-title">
               Gợi ý theo dõi
@@ -1433,7 +1433,7 @@
             </a>
           </div>
         </div>
-        <div class="right-siderbar-content-footer">
+        <div class="line">
           <div class="line-1">
             <span class="line-1-item">
               <a href="$" class="line-1-item-text">
@@ -1472,7 +1472,7 @@
     </div>
     <div id="post-show" class="post-show">
       <div class="post-show-header">
-        <div class="post-show-header-overlay" onclick="removeTweetClick()">
+        <div id="exit-form" class="post-show-header-overlay">
           <i class="fas fa-times"></i>
         </div>
       </div>
@@ -1519,6 +1519,16 @@
   <script type="text/javascript">
   let support = document.getElementById('support-toggle');
   let postShow = document.getElementById('post-show');
+  let body = document.getElementById('body');
+  const searchForm = document.getElementById('search-form-input');
+  const btn = document.getElementById('btn');
+  const exitForm = document.getElementById('exit-form');
+
+  searchForm.addEventListener('focus', handlerFocus);
+  searchForm.addEventListener('blur', handlerBlur);
+  btn.addEventListener('click', tweetClick);
+  exitForm.addEventListener('click', removeTweetClick);
+
   function handlerFocus() {
     support.classList.add('search-form-input-show');
   }
@@ -1527,9 +1537,11 @@
   }
   function tweetClick() {
     postShow.classList.add('tweet-click');
+    body.classList.add('block');
   }
   function removeTweetClick() {
     postShow.classList.remove('tweet-click');
+    body.classList.remove('block');
   }
   </script>
 </body>
